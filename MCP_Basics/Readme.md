@@ -3,17 +3,7 @@
 This project demonstrates a **multi-server MCP setup** where a single client interacts with **two MCP servers** exposing both prompts and resources.  
 It showcases **asynchronous communication**, prompt execution, resource retrieval, and multi-server orchestration.
 
----
 
-## Project Structure
-├── mcp_server_a.py # MCP Server A (prompts + resources)
-├── mcp_server_b.py # MCP Server B (prompts + resources)
-├── multi_mcp_client.py # Client connecting to both servers
-├── mcp_prompt_client.py # Demo client for single server prompts
-├── mcp_client.py # Demo client for single server resources
-└── README.md
-
----
 
 ## Server Details
 
