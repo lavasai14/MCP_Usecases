@@ -16,6 +16,17 @@ It can generate personalized certificate images dynamically with names, courses,
   - Can be used for local testing or integrated into larger automation pipelines.
 
 ---
+certificate_project/
+├─ agent/
+│  └─ certificate_agent.py         # Client/agent script
+├─ server/
+│  └─ certificate_server.py        # MCP server with tools
+├─ data/
+│  └─ certificate.png              # Certificate template image
+├─ output/                         # Generated certificates
+├─ requirements.txt                # Python dependencies
+└─ README.md                       # Project documentation
+
 
 ## Setup
 
