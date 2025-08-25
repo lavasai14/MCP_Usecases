@@ -17,6 +17,14 @@ A single-file demo showing how to use **MCP (Modular Control Protocol)** to gene
 
 ---
 
+mcp_report_project/
+├─ logo.png                     # Company logo image (resource)
+├─ report_demo.py               # Single-file MCP server + client
+├─ output/                      # PDF reports generated here
+├─ requirements.txt             # Python dependencies
+└─ README.md                    # Documentation
+
+---
 ## Setup
 
 1. **Clone the repository**
