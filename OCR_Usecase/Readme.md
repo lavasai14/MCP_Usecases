@@ -1,27 +1,23 @@
-# MCP Travel System
+# MCP OCR Server & Client
 
-This project demonstrates a **Modular Control Protocol (MCP)** based travel system with two setups: **without agents** (hardcoded tool calls) and **with agents** (dynamic orchestration).
+This project implements a **local OCR system** using MCP (Modular Control Protocol) with a **server-client architecture**. It can extract text from images using **Tesseract OCR**, or provide mock results if the OCR libraries or Tesseract binary are not installed.
 
 ---
 
 ## Features
 
-- **Travel Server Tools**:
-  - `get_weather`: Returns weather info for a city (mock data).
-  - `get_flight_details`: Returns flight info between two cities (mock data).
-  - `generate_itinerary_pdf`: Generates a PDF itinerary with city, days, and activities.
-- **Client**:
-  - Connects to the server via MCP over `stdio`.
-  - Calls tools sequentially (non-agent) or lets agents decide tool execution.
-- **PDF Generation**: Uses ReportLab to create a simple travel itinerary.
+- Perform OCR on images using Tesseract.
+- Mock OCR fallback if libraries or binaries are missing.
+- MCP-based architecture for modular communication.
+- Save extracted text to a file optionally.
+- Fully asynchronous using `asyncio`.
 
 ---
 
 ## Requirements
 
 - Python 3.10+
-- Dependencies:
-
-```bash
-pip install mcp reportlab pillow pytesseract
-
+- MCP package: `pip install mcp`
+- Optional (for real OCR):
+  ```bash
+  pip install pillow pytesseract
